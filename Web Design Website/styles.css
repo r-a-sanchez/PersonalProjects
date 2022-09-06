@@ -437,9 +437,3 @@ footer{
     text-align: center;
     font-family: var(--paragraph3);
 }
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
