@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Rye&family=Texturina:ital,opsz,wght@0,12..72,100;0,12..72,200;0,12..72,300;0,12..72,400;0,12..72,500;0,12..72,600;0,12..72,700;0,12..72,800;0,12..72,900;1,12..72,100;1,12..72,200;1,12..72,300;1,12..72,400;1,12..72,500;1,12..72,600;1,12..72,700;1,12..72,800;1,12..72,900&display=swap');
+
+/* Titles Fonts: 
+    *'Berkshire Swash', cursive;
+    *'Pacifico', cursive;
+    *'Rye', cursive;
+*/
+
+/* Paragraphs Fonts:
+    *'Besley', serif;
+    *'Texturina', serif;
+    *'Josefin Sans', sans-serif;
+*/
+
+:root{
+    --title: 'Rye', cursive;
+    --nav-text: 'Pacifico', cursive;
+    --header-text: 'Berkshire Swash', cursive;
+    --paragraph1: 'Besley', serif;
+    --paragraph2: 'Texturina', serif;
+    --paragraph3: 'Josefin Sans', sans-serif;
+
+    /* First Color Dark Theme */
+    --dark1-primary: #a7c8ff;
+    --dark1-onprimary: #003061;
+    --dark1-primarycontainer: #004788;
+    --dark1-onprimarycontainer: #d5e3ff;
+    /* First Color Light Theme */
+    --light1-primary: #235fa6;
+    --light1-onprimary: #ffffff;
+    --light1-primarycontainer: #d5e3ff;
+    --light1-onprimarycontainer: #001b3c;
+
+    /* Second Color Dark Theme */
+    --dark2-primary: #edc148;
+    --dark2-onprimary: #3e2e00;
+    --dark2-primarycontainer: #594400;
+    --dark2-onprimarycontainer: #ffdf93;
+    /* Second Color Light Theme */
+    --light2-primary: #765b00;
+    --light2-onprimary: #ffffff;
+    --light2-primarycontainer: #ffdf93;
+    --light2-onprimarycontainer: #241a00;
+
+    /* Third Color Dark Theme */
+    --dark3-primary: #ffb3b1;
+    --dark3-onprimary: #640a14;
+    --dark3-primarycontainer: #832328;
+    --dark3-onprimarycontainer: #ffdad8;
+    /* Third Color Light Theme */
+    --light3-primary: #a33b3e;
+    --light3-onprimary: #ffffff;
+    --light3-primarycontainer: #ffdad8;
+    --light3-onprimarycontainer: #410007;
+
+    /* Fourth Color Dark Theme */
+    --dark4-primary: #dab9ff;
+    --dark4-onprimary: #411b6d;
+    --dark4-primarycontainer: #593485;
+    --dark4-onprimarycontainer: #eedbff;
+    /* Fourth Color Light Theme */
+    --light4-primary: #714c9f;
+    --light4-onprimary: #ffffff;
+    --light4-primarycontainer: #eedbff;
+    --light4-onprimarycontainer: #2a0053;
+
+    /* Other Color */
+    --background: #1a1c1e;
+    --outline: #3e2845;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--dark1-primary);
+}
+
+.header-title{
+    font-family: var(--title);
+    text-align: center;
+    margin: 15px;
+    text-shadow: 1px 1px 5px;
+}
+
+li.nav-item{
+    text-align: center;
+    text-decoration: none;
+    flex: 1 1 auto;
+    font-family: var(--header-text);
+    background: var(--dark1-primarycontainer);
+    background-blend-mode: overlay;
+    border-left: 3px var(--outline) solid;
+    border-radius: 27px;
+    border-right: 3px var(--outline) solid;
+}
+
+.nav-item:hover{
+    background: var(--primary);
+    border-left: 3px var(--outline) solid;
+    border-radius: 27px;
+    border-right: 3px var(--outline) solid;
+}
+
+.nav-link{
+    color: var(--dark1-onprimarycontainer);
+}
+
+.nav-link:hover{
+    color: var(--dark1-primarycontainer);
+    font-size: 20px;
+}
+
+section{
+    margin: 10px;
+    padding: 1rem;
+    border: 1px var(--outline) solid;
+    border-radius: 10px;
+}
+
+section:hover{
+    box-shadow: 0px 2px 10px;
+}
+
+.main-title, .subtitle{
+    text-align: center;
+    font-family: var(--nav-text);
+    margin: 15px;
+
+}
+
+article.d-flex{
+    flex-wrap: wrap;
+}
+
+.d-inline-flex{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+h4{
+    border-bottom: 1px var(--outline) solid;
+    margin: 0;
+    font-family: var(--header-text);
+}
+
+figure{
+    display: inline-flex;
+    padding: 20px;
+    margin: 0;
+    font-family: var(--paragraph3);
+}
+
+.color-1 .light{
+    background-color: var(--light1-onprimary);
+    border-radius: 10px;
+    margin: 5px;
+    color: var(--light1-primary);
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-1 .light .primary{
+    background-color: var(--light1-primary);
+    color: var(--light1-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-1 .light .onprimary{
+    background-color: var(--light1-onprimary);
+    color: var(--light1-primary);
+}
+
+.color-1 .light .primarycontainer{
+    background-color: var(--light1-primarycontainer);
+    color: var(--light1-onprimarycontainer);
+}
+
+.color-1 .light .onprimarycontainer{
+    background-color: var(--light1-onprimarycontainer);
+    color: var(--light1-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-1 .dark{
+    background-color: var(--dark1-onprimary);
+    border-radius: 10px;
+    margin-top: 5px;
+    color: var(--dark1-primary);
+    border: 1px var(--outline) solid;
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-1 .dark .primary{
+    background-color: var(--dark1-primary);
+    color: var(--dark1-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-1 .dark .onprimary{
+    background-color: var(--dark1-onprimary);
+    color: var(--dark1-primary);
+}
+
+.color-1 .dark .primarycontainer{
+    background-color: var(--dark1-primarycontainer);
+    color: var(--dark1-onprimarycontainer);
+}
+
+.color-1 .dark .onprimarycontainer{
+    background-color: var(--dark1-onprimarycontainer);
+    color: var(--dark1-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-2 .light{
+    background-color: var(--light2-onprimary);
+    border-radius: 10px;
+    margin: 5px;
+    color: var(--light2-primary);
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-2 .light .primary{
+    background-color: var(--light2-primary);
+    color: var(--light2-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-2 .light .onprimary{
+    background-color: var(--light2-onprimary);
+    color: var(--light2-primary);
+}
+
+.color-2 .light .primarycontainer{
+    background-color: var(--light2-primarycontainer);
+    color: var(--light2-onprimarycontainer);
+}
+
+.color-2 .light .onprimarycontainer{
+    background-color: var(--light2-onprimarycontainer);
+    color: var(--light2-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-2 .dark{
+    background-color: var(--dark2-onprimary);
+    border-radius: 10px;
+    margin-top: 5px;
+    color: var(--dark2-primary);
+    border: 1px var(--outline) solid;
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-2 .dark .primary{
+    background-color: var(--dark2-primary);
+    color: var(--dark2-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-2 .dark .onprimary{
+    background-color: var(--dark2-onprimary);
+    color: var(--dark2-primary);
+}
+
+.color-2 .dark .primarycontainer{
+    background-color: var(--dark2-primarycontainer);
+    color: var(--dark2-onprimarycontainer);
+}
+
+.color-2 .dark .onprimarycontainer{
+    background-color: var(--dark2-onprimarycontainer);
+    color: var(--dark2-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-3 .light{
+    background-color: var(--light3-onprimary);
+    border-radius: 10px;
+    margin: 5px;
+    color: var(--light3-primary);
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-3 .light .primary{
+    background-color: var(--light3-primary);
+    color: var(--light3-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-3 .light .onprimary{
+    background-color: var(--light3-onprimary);
+    color: var(--light3-primary);
+}
+
+.color-3 .light .primarycontainer{
+    background-color: var(--light3-primarycontainer);
+    color: var(--light3-onprimarycontainer);
+}
+
+.color-3 .light .onprimarycontainer{
+    background-color: var(--light3-onprimarycontainer);
+    color: var(--light3-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-3 .dark{
+    background-color: var(--dark3-onprimary);
+    border-radius: 10px;
+    margin-top: 5px;
+    color: var(--dark3-primary);
+    border: 1px var(--outline) solid;
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-3 .dark .primary{
+    background-color: var(--dark3-primary);
+    color: var(--dark3-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-3 .dark .onprimary{
+    background-color: var(--dark3-onprimary);
+    color: var(--dark3-primary);
+}
+
+.color-3 .dark .primarycontainer{
+    background-color: var(--dark3-primarycontainer);
+    color: var(--dark3-onprimarycontainer);
+}
+
+.color-3 .dark .onprimarycontainer{
+    background-color: var(--dark3-onprimarycontainer);
+    color: var(--dark3-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-4 .light{
+    background-color: var(--light4-onprimary);
+    border-radius: 10px;
+    margin: 5px;
+    color: var(--light4-primary);
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-4 .light .primary{
+    background-color: var(--light4-primary);
+    color: var(--light4-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-4 .light .onprimary{
+    background-color: var(--light4-onprimary);
+    color: var(--light4-primary);
+}
+
+.color-4 .light .primarycontainer{
+    background-color: var(--light4-primarycontainer);
+    color: var(--light4-onprimarycontainer);
+}
+
+.color-4 .light .onprimarycontainer{
+    background-color: var(--light4-onprimarycontainer);
+    color: var(--light4-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.color-4 .dark{
+    background-color: var(--dark4-onprimary);
+    border-radius: 10px;
+    margin-top: 5px;
+    color: var(--dark4-primary);
+    border: 1px var(--outline) solid;
+    display: inline-table;
+    width: fit-content;
+}
+
+.color-4 .dark .primary{
+    background-color: var(--dark4-primary);
+    color: var(--dark4-onprimary);
+    border-radius: 0 0 0 10px;
+}
+
+.color-4 .dark .onprimary{
+    background-color: var(--dark4-onprimary);
+    color: var(--dark4-primary);
+}
+
+.color-4 .dark .primarycontainer{
+    background-color: var(--dark4-primarycontainer);
+    color: var(--dark4-onprimarycontainer);
+}
+
+.color-4 .dark .onprimarycontainer{
+    background-color: var(--dark4-onprimarycontainer);
+    color: var(--dark4-primarycontainer);
+    border-radius: 0 0 10px;
+}
+
+.title-1, .title-1 h4{
+    font-family: var(--title) !important;
+}
+
+.title-2, .title-2 h4{
+    font-family: var(--nav-text) !important;
+}
+
+.title-3, .title-3 h4{
+    font-family: var(--header-text) !important;
+}
+
+.paragraph-1, .paragraph-1 h4{
+    font-family: var(--paragraph1) !important;
+}
+
+.paragraph-2, .paragraph-2 h4{
+    font-family: var(--paragraph2) !important;
+}
+
+.paragraph-3, .paragraph-3 h4{
+    font-family: var(--paragraph3) !important;
+}
+
+.list{
+    text-align: justify;
+    list-style: circle;
+    font-family: var(--paragraph1);
+}
+
+footer{
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    font-family: var(--paragraph3);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
