@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Rye&family=Texturina:ital,opsz,wght@0,12..72,100;0,12..72,200;0,12..72,300;0,12..72,400;0,12..72,500;0,12..72,600;0,12..72,700;0,12..72,800;0,12..72,900;1,12..72,100;1,12..72,200;1,12..72,300;1,12..72,400;1,12..72,500;1,12..72,600;1,12..72,700;1,12..72,800;1,12..72,900&display=swap');
+
+:root{
+    --title: 'Rye', cursive;
+    --nav-text: 'Pacifico', cursive;
+    --header-text: 'Berkshire Swash', cursive;
+    --paragraph1: 'Besley', serif;
+    --paragraph2: 'Texturina', serif;
+    --paragraph3: 'Josefin Sans', sans-serif;
+}
+
+header.d-flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    flex: 1 1 auto;
+}
+
+.logo{
+    font-family: var(--nav-text);
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.logo img{
+    width: 5%;
+    height: fit-content;
+    align-self: center;
+}
+
+.logo h1{
+    letter-spacing: 0.5em;
+    padding-left: 0.5em;
+    color: #a33b3e;
+}
+
+.nav-link{
+    display: inline-block;
+    padding-right: 30%;
+    color: #410007;
+}
+
+.nav-item{
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    background-color: #ffdad8;
+    font-family: var(--header-text);
+}
+
+.nav-item img{
+    width: 0%;
+}
+
+.nav-item:hover{
+    background-color: #410007;
+}
+
+.nav-item:hover .nav-link{
+    color: #ffdad8 !important;
+}
+
+.nav-item:hover img{
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+
+    width:10%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+#decorations, #details, #team, #contact{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    margin: 1em 0 2em 0;
+    text-align: center;
+    color: #a33b3e;
+}
+
+.header h2{
+    font-family: var(--header-text);
+}
+
+.header p{
+    font-family: var(--paragraph1);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#decorations figure img{
+    width: 24%;
+    margin: 0.5em 0;
+}
+
+#details figure img{
+    width: 32%;
+    margin: 0.5em 0;
+}
+
+.content{
+    display: flex;
+    align-content: flex-end;
+    padding: 1em 0;
+    background-image: url(./Resources/Images/art-g7ad457f17_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffdad8;
+    background-blend-mode: color-dodge;
+}
+
+#team figure{
+    display: inline-flex;
+    align-content: center;
+}
+
+#team figure img{
+    width: 80%;
+    height: 95%;
+}
+
+#team figcaption{
+    position: absolute;
+    font-family: var(--nav-text);
+    background-color: #a33b3e;
+    width: 25.5%;
+    color: white;
+    text-align: center;
+    padding: 1em 0 0;
+    visibility: hidden;
+}
+
+#team figure:nth-child(2) figcaption{
+    width: 26%;
+}
+
+#team figure:nth-child(3) figcaption{
+    width: 24.5%;
+}
+
+#team figure:hover figcaption{
+    -webkit-transition: visibility 1s ease-in-out;
+    -moz-transition: visibility 1s ease-in-out;
+    -o-transition: visibility 1s ease-in-out;
+    transition: visibility 1s ease-in-out;
+
+    visibility: visible;
+}
+
+.contact{
+    text-align: center;
+    font-family: var(--paragraph1);
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    color: #a33b3e;
+}
+
+footer{
+    background-color: #a33b3e;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 800;
+    font-family: var(--paragraph1);
+    padding: 1em;
+}
+
+footer p{
+    margin-bottom: 0;
+}
